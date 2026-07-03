@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    border: 0;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "header header"
+                "main main"
+                "footer footer";
+   
+    min-height: 100vh;
+    
+}
+
+/* Header Section */
+header {
+    grid-area: header;
+    background-color: rgb(3, 58, 110);
+    color: white;
+}
+#course-title{
+    display: block;
+    padding: 20px;
+    text-align: center;
+
+
+}
+
+nav {
+    background-color: black;
+    padding: 8px 0;
+
+}
+.navigation-list {
+    display: flex;
+    justify-content:space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: #ffd166;
+    text-decoration: none;
+}
+
+
+/* Main Section */
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 2.5fr 1.2fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: "h1 h1"
+                         "about resources";
+    
+    margin: 10px 70px 10px 70px;
+    gap: 15px;  
+}
+
+h1 {
+    grid-area: h1;
+    text-align: center;
+}
+
+.card {
+    border-radius: 8px;
+    border: 2px solid black;
+  
+}
+
+.profile {
+    width: 200px;
+    height: 200px;
+    float: right; 
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.flag {
+    width: 200px;
+    height: 180px;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.about_me  {
+    grid-area: about;
+   
+}
+
+.card h2 {
+    background-color: rgb(3, 58, 110);
+    padding: 5px;
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.about_me p {
+    padding: 5px;
+    margin: 15px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.location-heading {
+    text-align: center;
+}
+
+.location-heading h4 {
+    display: inline-block;
+    border-bottom: 1px solid gray;
+    padding-bottom: 8px;
+}
+.location-heading {
+    text-align: center;
+    
+}
+
+.resources {
+    grid-area: resources;
+    border: 2px solid black;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.resources ul {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.resources ul {
+    padding-left: 35px;
+    list-style: disc;
+    margin: 0;
+}
+
+.resources li {
+    margin-bottom: 10px;
+
+}
+.resources a {
+    color: navy;
+    text-decoration: underline;
+}
+
+/* Footer Section */
+footer {
+    grid-area: footer;
+    background-color: rgb(3, 58, 110);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    }
+footer p{
+    margin: 5px;
+}
