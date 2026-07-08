@@ -1,0 +1,25 @@
+@media screen and (min-width: 500px) {
+    header{
+        background-color: black;
+        color: white;
+        padding-left: 15px;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        padding: 15px;
+    }
+
+
+}
+
+main, 
+footer{
+    background-color: #e6f2ff;
+    
+}
+
+footer{
+    padding-left: 15px;
+}

@@ -1,0 +1,27 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (max-width: 640px) {
+   .media-query {
+        margin: 1rem auto;
+        border: 1px solid #bbb;
+        padding: 10px;
+        background-color: #e6f2ff;
+        color: black;
+    }
+  
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+section {
+    padding: 10px;
+    background-color: #fff;
+
+}
