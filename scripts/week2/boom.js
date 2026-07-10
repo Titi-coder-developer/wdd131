@@ -1,3 +1,4 @@
+
 // select elements from the DOM
 const inputElement = document.querySelector("#favchap");
 const buttonElement = document.querySelector("button");
