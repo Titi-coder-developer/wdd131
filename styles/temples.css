@@ -16,15 +16,14 @@ header {
     background-color: blueviolet;
     color: white;
     padding: 1rem;
-}
 
-/* Title and Hamburger */
-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
+
+/* Title and Hamburger */
 
 #menu {
     font-size: 2rem;
