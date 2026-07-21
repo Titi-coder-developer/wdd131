@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 | Country Page | Nigeria</title>
+    <meta name="description" content="A country page about Nigeria for the WDD 131 Week 3 assignment.">
+    <meta name="author" content="Adindu Chinweokwu Clementina">
+    
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+    
+    <main>
+    
+        <section class="hero">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/hero-large.webp" type="image/webp">
+                <source media="(min-width: 500px)" srcset="images/hero-medium.webp" type="image/webp">
+                <img src="images/hero-small.webp" alt="Beautiful view of Nigeria"
+             width="1500"
+             height="750">
+            </picture>
+    
+            <section class="data">
+                <h2>Data</h2>
+                <ul>
+                    <li><strong>Area:</strong> 923,768 km²</li>
+                    <li><strong>Population:</strong> 220 million</li>
+                    <li><strong>Capital:</strong> Abuja</li>
+                    <li><strong>Languages:</strong> English</li>
+                    <li><strong>Currency:</strong> Nigerian Naira</li>
+                    <li><strong>Time Zone: </strong> UTC+1</li>
+                    <li><strong>Calling Code:</strong> +234</li>
+                </ul>
+            </section>
+        
+            <section class="weather">
+                <h2>Weather</h2>
+                
+                <div class="weather-icon">
+                <img src="images/weather_mix.svg" alt="Partly cloudy weather icon" class="weather-icon" width="50" height="50">
+                </div>
+
+                <ul>
+                    <li><strong>Temperature:</strong> <span id="temperature">8</span>°C</li>
+                    <li><strong>Conditions:</strong> Partly Cloudy</li>
+                    <li><strong>Wind:</strong> <span id="wind-speed">10</span> km/h</li>
+                    <li><strong>Wind Chill:</strong> <span id="wind-chill">N/A</span></li>
+                </ul>
+            </section>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Adindu Chinweokwu Clementina | Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
