@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+main, footer{
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+}
+
+img {
+    display: block;
+    width: 400px;
+    height: auto;
+    animation: fade 2s ease-in-out;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+footer {
+    margin-top: 10px;
+    text-align: center;
+}
+
