@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Charset -->
+    <meta charset="UTF-8">
+
+    <!-- Meta Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>WDD 131 | Temple Album | Adindu Chinweokwu Clementina</title>
+
+    <!-- Meta Description -->
+    <meta name="description"
+        content="WDD 131 Week 4 Filtered Temple Album assignment demonstrating JavaScript array filtering, dynamic temple cards, lazy loading images, and responsive web design.">
+    <!-- Meta Author -->
+    <meta name="author" content="Adindu Chinweokwu Clementina">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+    <!-- Header Section-->
+    <header>
+        <div class="top-bar">
+            <h1>Temple Album</h1>
+            <button id="menu" aria-label="Menu"></button>
+        </div>
+        <nav class="open">
+            <ul>
+                <li><a href="#" id="home">Home</a></li>
+                <li><a href="#" id="old">Old</a></li>
+                <li><a href="#" id="new">New</a></li>
+                <li><a href="#" id="large">Large</a></li>
+                <li><a href="#" id="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section-->
+    <main>
+        <h2>Home</h2>
+        
+        <div id="temples"></div>
+    </main>
+
+    <!--Footer Section-->
+    <footer>
+        <p> &copy; <span id="currentyear"></span>
+            | Chinweokwu Clementina Adindu || Abia state, Nigeria
+        </p>
+        <p id="modified"></p>
+    </footer>
+
+</body>
+
+</html>
