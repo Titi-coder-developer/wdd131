@@ -52,10 +52,6 @@ textarea {
     border: none;
 }
 
-input[type="checkbox"] {
-    margin-right: 5px;
-}
-
 .stars {
     display: flex;
     justify-content: space-between;
@@ -91,6 +87,10 @@ button {
     font-size: 2rem;
     font-weight: bold;
     cursor: pointer;
+}
+
+.required {
+    color: red;
 }
 
 footer {
