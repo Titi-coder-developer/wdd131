@@ -1,0 +1,177 @@
+@font-face {
+  font-family: 'evway';
+  src:  url('fonts/evway.eot?r40dh');
+  src:  url('fonts/evway.eot?r40dh#iefix') format('embedded-opentype'),
+    url('fonts/evway.ttf?r40dh') format('truetype'),
+    url('fonts/evway.woff?r40dh') format('woff'),
+    url('fonts/evway.svg?r40dh#evway') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="evway-icon-"], [class*=" evway-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'evway' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.evway-icon-parking:before {
+  content: "\e900";
+}
+.evway-icon-ccs:before {
+  content: "\e901";
+}
+.evway-icon-ccs1:before {
+  content: "\e902";
+}
+.evway-icon-electric-car:before {
+  content: "\e903";
+}
+.evway-icon-plug:before {
+  content: "\e904";
+}
+.evway-icon-mobile-app:before {
+  content: "\e905";
+}
+.evway-icon-electric-bus:before {
+  content: "\e906";
+}
+.evway-icon-electric-scooter:before {
+  content: "\e907";
+}
+.evway-icon-energy:before {
+  content: "\e908";
+}
+.evway-icon-charge:before {
+  content: "\e909";
+}
+.evway-icon-renewable-energy:before {
+  content: "\e90a";
+}
+.evway-icon-wireless-charging:before {
+  content: "\e90b";
+}
+.evway-icon-electric-car1:before {
+  content: "\e90c";
+}
+.evway-icon-map:before {
+  content: "\e90d";
+}
+.evway-icon-electric-car2:before {
+  content: "\e90e";
+}
+.evway-icon-charging-station:before {
+  content: "\e90f";
+}
+.evway-icon-plug4:before {
+  content: "\e910";
+}
+.evway-icon-sign1:before {
+  content: "\e911";
+}
+.evway-icon-charging:before {
+  content: "\e912";
+}
+.evway-icon-green-energy:before {
+  content: "\e913";
+}
+.evway-icon-gb:before {
+  content: "\e914";
+}
+.evway-icon-low-charge:before {
+  content: "\e915";
+}
+.evway-icon-battery:before {
+  content: "\e916";
+}
+.evway-icon-place:before {
+  content: "\e917";
+}
+.evway-icon-ev:before {
+  content: "\e918";
+}
+.evway-icon-charged:before {
+  content: "\e919";
+}
+.evway-icon-navigator:before {
+  content: "\e91a";
+}
+.evway-icon-plug1:before {
+  content: "\e91b";
+}
+.evway-icon-plug2:before {
+  content: "\e91c";
+}
+.evway-icon-electricity:before {
+  content: "\e91d";
+}
+.evway-icon-electricity1:before {
+  content: "\e91e";
+}
+.evway-icon-electric-car3:before {
+  content: "\e91f";
+}
+.evway-icon-electric-station:before {
+  content: "\e920";
+}
+.evway-icon-electric-station1:before {
+  content: "\e921";
+}
+.evway-icon-payment-method:before {
+  content: "\e922";
+}
+.evway-icon-setting:before {
+  content: "\e923";
+}
+.evway-icon-charging-station1:before {
+  content: "\e924";
+}
+.evway-icon-battery2:before {
+  content: "\e925";
+}
+.evway-icon-sign:before {
+  content: "\e926";
+}
+.evway-icon-battery1:before {
+  content: "\e927";
+}
+.evway-icon-technician:before {
+  content: "\e928";
+}
+.evway-icon-repair:before {
+  content: "\e929";
+}
+.evway-icon-charger:before {
+  content: "\e92a";
+}
+.evway-icon-fast-charge:before {
+  content: "\e92b";
+}
+.evway-icon-plug3:before {
+  content: "\e92c";
+}
+.evway-icon-accumulator:before {
+  content: "\e92d";
+}
+.evway-icon-solar-panel:before {
+  content: "\e92e";
+}
+.evway-icon-wireless-charging1:before {
+  content: "\e92f";
+}
+.evway-icon-kick-scooter:before {
+  content: "\e930";
+}
+.evway-icon-electricity2:before {
+  content: "\e931";
+}

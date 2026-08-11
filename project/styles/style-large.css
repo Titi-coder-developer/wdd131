@@ -1,0 +1,140 @@
+@media screen and (min-width: 768px) {
+
+    /* ==========================
+       HERO SECTION (Desktop)
+    ========================== */
+
+    .hero {
+        height: 100vh;
+    }
+
+    .hero-content {
+        width: 80%;
+        max-width: 850px;
+    }
+
+    .hero-tagline {
+        font-size: 1.1rem;
+        letter-spacing: 3px;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-content h2 {
+        font-size: 4rem;
+        line-height: 1.1;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-text {
+        font-size: 1.25rem;
+        line-height: 1.8;
+        max-width: 700px;
+        margin: 0 auto 2.5rem;
+    }
+
+    .hero-buttons {
+        gap: 1.5rem;
+    }
+
+    .hero-buttons a {
+        padding: 1rem 2.5rem;
+        font-size: 1.1rem;
+        border-radius: 8px;
+    }
+
+    .btn-primary:hover,
+    .btn-secondary:hover {
+        transform: translateY(-5px);
+    }
+
+        /* ==========================
+       PRODUCTS
+    ========================== */
+    
+        .product-container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+    
+        /* ==========================
+       ABOUT US - DESKTOP
+    ========================== */
+    
+        .about-us {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            padding: 6rem 4rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    
+        .about-image {
+            margin-bottom: 0;
+        }
+    
+        .about-image img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+    
+        .about-content {
+            text-align: left;
+        }
+    
+        .about-content h2 {
+            font-size: 2.8rem;
+        }
+    
+        .about-content p {
+            max-width: 550px;
+        }
+    
+        .about-button {
+            margin-top: 1rem;
+        }
+    
+        /* Why Choose Us Section */
+        .why-choose-us {
+            padding: 5rem 2rem;
+        }
+    
+        .why-container {
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+    
+        .why-card {
+            padding: 2rem 1.5rem;
+        }
+    
+        .why-choose-us .section-title h2 {
+            font-size: 2.5rem;
+        }
+    
+        /* Call to Action Section */
+        .cta {
+            padding: 5rem 2rem;
+        }
+    
+        .cta-content {
+            max-width: 750px;
+        }
+    
+        .cta-content h2 {
+            font-size: 2.5rem;
+        }
+    
+        .cta-content>p {
+            font-size: 1rem;
+        }
+
+}
+

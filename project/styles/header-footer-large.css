@@ -1,0 +1,105 @@
+@media screen and (min-width: 768px) {
+
+    /* ==========================
+       HEADER
+    ========================== */
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 4rem;
+        box-shadow: var(--box-shadow);
+    }
+
+    .header-top {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .logo-container img {
+        width: 80px;
+        height: auto;
+    }
+
+    .logo-container h1 {
+        font-size: 2rem;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: flex-end;
+        gap: 2rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navigation a {
+        text-decoration: none;
+        color: var(--text-color);
+        font-weight: 500;
+        transition: color .3s ease;
+    }
+
+    .navigation a:hover {
+        color: var(--secondary-color);
+    }
+
+    /* ==========================
+       FOOTER
+    ========================== */
+
+    footer {
+        display: grid;
+        grid-template-columns: 1.4fr 1fr 1.8fr;
+        gap: 3rem;
+        padding: 3rem 4rem;
+        align-items: start;
+    }
+
+    .footer-company {
+        justify-self: start;
+    }
+
+    .footer-explore {
+        justify-self: center;
+    }
+
+    .footer-explore ul {
+        display: flex;
+        flex-direction: column;
+        gap: .8rem;
+        list-style: none;
+        padding: 0;
+        align-items: flex-start;
+    }
+
+    .footer-contact {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+    }
+
+    .footer-bottom {
+        grid-column: 1 / -1;
+        text-align: center;
+        margin-top: 2rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid rgba(255, 255, 255, .3);
+    }
+}

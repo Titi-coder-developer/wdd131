@@ -1,0 +1,60 @@
+/* ==========================
+   REFERENCES PAGE - DESKTOP
+========================== */
+
+@media screen and (min-width: 768px) {
+
+    .references-hero {
+        padding: 6rem 2rem;
+    }
+
+    .references-hero h2 {
+        font-size: 3rem;
+    }
+
+
+    /* ==========================
+       REFERENCES SECTION
+    ========================== */
+
+    .references-section {
+        padding: 5rem 2rem;
+    }
+
+    .references-container {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .reference-item {
+        padding: 2rem;
+        margin-bottom: 2rem;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .reference-item:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--box-shadow);
+    }
+
+    .reference-item h2 {
+        font-size: 1.6rem;
+    }
+
+
+    /* ==========================
+       REFERENCE LIST
+    ========================== */
+
+    .reference-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .reference-list li {
+        margin-bottom: 0;
+        padding: 1rem;
+    }
+
+}

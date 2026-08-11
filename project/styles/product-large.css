@@ -1,0 +1,72 @@
+@media screen and (min-width: 768px) {
+
+    /* ==========================
+       PRODUCTS PAGE - DESKTOP
+    ========================== */
+    
+        .products-hero {
+            padding: 6rem 2rem;
+        }
+    
+        .products-hero h2 {
+            font-size: 3rem;
+        }
+    
+    
+        /* ==========================
+       PRODUCT LIST
+    ========================== */
+    
+        .product-list {
+            padding: 5rem 2rem;
+        }
+    
+        .product-list .section-title h2 {
+            font-size: 2.5rem;
+        }
+    
+        .product-grid {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+    
+        .product-item {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+    
+        .product-item:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--box-shadow);
+        }
+    
+        .product-item img {
+            height: 250px;
+        }
+    
+        .product-info {
+            padding: 1.7rem;
+        }
+    
+    
+        /* ==========================
+       LUBRICANTS
+    ========================== */
+    
+        .lubricants-section {
+            background-color: var(--white-color);
+        }
+    
+    
+        /* ==========================
+       CALL TO ACTION
+    ========================== */
+    
+        .product-cta {
+            padding: 5rem 2rem;
+        }
+    
+        .product-cta h2 {
+            font-size: 2.5rem;
+        }
+
+}
