@@ -1,5 +1,5 @@
 /* ==========================
-   HERO SECTION (Mobile)
+   HERO SECTION - MOBILE
 ========================== */
 
 .hero {
@@ -9,9 +9,9 @@
     overflow: hidden;
 }
 
+/* Hero Image */
 .hero picture {
     display: block;
-    inset: 0;
     width: 100%;
     height: 100%;
 }
@@ -24,6 +24,7 @@
     animation: heroZoom 10s ease-in-out infinite alternate;
 }
 
+/* Dark Overlay */
 .hero::before {
     content: "";
     position: absolute;
@@ -31,6 +32,7 @@
     background: rgba(0, 0, 0, 0.7);
 }
 
+/* Hero Content */
 .hero-content {
     position: absolute;
     top: 50%;
@@ -48,6 +50,7 @@
     animation: fadeUp 1.2s ease;
 }
 
+/* Tagline */
 .hero-tagline {
     color: var(--accent-color);
     font-size: 0.9rem;
@@ -57,6 +60,7 @@
     margin-bottom: 1rem;
 }
 
+/* Heading */
 .hero-content h2 {
     font-family: var(--heading-font);
     font-size: 2.2rem;
@@ -65,6 +69,7 @@
     margin-bottom: 1rem;
 }
 
+/* Paragraph */
 .hero-text {
     font-size: 1rem;
     line-height: 1.7;
@@ -72,6 +77,7 @@
     margin: 0 auto 2rem;
 }
 
+/* Buttons */
 .hero-buttons {
     display: flex;
     justify-content: center;
@@ -90,185 +96,51 @@
 
     font-weight: 600;
 
-    transition: all .3s ease;
+    transition: all 0.3s ease;
 }
 
+/* Primary Button */
 .btn-primary {
-    background: var(--accent-color);
+    background-color: var(--accent-color);
     color: var(--text-color);
 }
 
 .btn-primary:hover {
-    background: #e6c659;
+    background-color: #e6c659;
     transform: translateY(-3px);
 }
 
+/* Secondary Button */
 .btn-secondary {
     border: 2px solid var(--white-color);
     color: var(--white-color);
 }
 
 .btn-secondary:hover {
-    background: var(--white-color);
+    background-color: var(--white-color);
     color: var(--secondary-color);
     transform: translateY(-3px);
 }
 
-/* Animations */
+/* ==========================
+   HERO IMAGE ANIMATION
+========================== */
 
 @keyframes heroZoom {
-
-    from {/* ==========================
-       Hero Section (Mobile)
-    ========================== */
-    
-        .hero {
-            position: relative;
-            width: 100%;
-            height: 100vh;
-            overflow: hidden;
-        }
-    
-        /* Hero Image */
-        .hero picture {
-            position: absolute;
-            inset: 0;
-            width: 100%;
-            height: 100%;
-        }
-    
-        .hero picture img {
-            width: 100%;
-            height: 100%;
-            display: block;
-            object-fit: cover;
-            animation: heroZoom 10s ease-in-out infinite alternate;
-        }
-    
-        /* Dark Overlay */
-        .hero::before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.70);
-            z-index: 1;
-        }
-    
-        /* Hero Content */
-        .hero-content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 90%;
-            max-width: 500px;
-            text-align: center;
-            color: var(--white-color);
-            z-index: 2;
-            animation: fadeUp 1.2s ease;
-        }
-    
-        /* Tagline */
-        .hero-tagline {
-            color: var(--accent-color);
-            font-size: 0.9rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 1rem;
-        }
-    
-        /* Heading */
-        .hero-content h2 {
-            font-family: var(--heading-font);
-            font-size: 2.5rem;
-            font-weight: 700;
-            line-height: 1.2;
-            margin-bottom: 1rem;
-        }
-    
-        /* Paragraph */
-        .hero-text {
-            font-size: 1rem;
-            line-height: 1.7;
-            margin: 0 auto 2rem;
-            max-width: 450px;
-        }
-    
-        /* Buttons */
-        .hero-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
-    
-        .hero-buttons a {
-            display: inline-block;
-            text-decoration: none;
-            padding: 0.9rem 1.6rem;
-            border-radius: 6px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
-    
-        /* Primary Button */
-        .btn-primary {
-            background-color: var(--accent-color);
-            color: var(--text-color);
-        }
-    
-        .btn-primary:hover {
-            background-color: #e6c659;
-            transform: translateY(-3px);
-        }
-    
-        /* Secondary Button */
-        .btn-secondary {
-            border: 2px solid var(--white-color);
-            color: var(--white-color);
-        }
-    
-        .btn-secondary:hover {
-            background-color: var(--white-color);
-            color: var(--secondary-color);
-            transform: translateY(-3px);
-        }
-    
-        /* Image Animation */
-        @keyframes heroZoom {
-            from {
-                transform: scale(1);
-            }
-    
-            to {
-                transform: scale(1.08);
-            }
-        }
-    
-        /* Text Animation */
-        @keyframes fadeUp {
-            from {
-                opacity: 0;
-                transform: translate(-50%, -40%);
-            }
-    
-            to {
-                opacity: 1;
-                transform: translate(-50%, -50%);
-            }
-        }
+    from {
         transform: scale(1);
     }
 
     to {
         transform: scale(1.08);
     }
-
 }
 
-@keyframes fadeUp {
+/* ==========================
+   HERO TEXT ANIMATION
+========================== */
 
+@keyframes fadeUp {
     from {
         opacity: 0;
         transform: translate(-50%, -40%);
@@ -278,7 +150,6 @@
         opacity: 1;
         transform: translate(-50%, -50%);
     }
-
 }
 
 /* ==========================
