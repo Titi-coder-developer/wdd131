@@ -22,6 +22,9 @@
     height: 100%;
     object-fit: cover;
     display: block;
+
+    /* Hero image animation */
+    animation: heroZoom 8s ease-in-out infinite alternate;
 }
 
 /* Dark overlay */
@@ -29,7 +32,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.3);
     z-index: 1;
 }
 
@@ -50,6 +53,9 @@
 
     text-align: center;
     color: var(--white-color);
+
+    /* Text animation */
+    animation: fadeUp 1.2s ease-out forwards;
 }
 
 /* Tagline */
@@ -91,14 +97,17 @@
     display: inline-block;
     min-width: 150px;
     text-align: center;
-
     text-decoration: none;
+
     padding: 0.9rem 1.6rem;
     border-radius: 6px;
 
     font-weight: 600;
 
-    transition: all 0.3s ease;
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease,
+        color 0.3s ease;
 }
 
 /* Primary Button */
@@ -124,6 +133,7 @@
     transform: translateY(-3px);
 }
 
+
 /* ==========================
    HERO IMAGE ANIMATION
 ========================== */
@@ -138,6 +148,7 @@
     }
 }
 
+
 /* ==========================
    HERO TEXT ANIMATION
 ========================== */
@@ -145,14 +156,29 @@
 @keyframes fadeUp {
     from {
         opacity: 0;
-        transform: translate(-50%, -40%);
+        transform: translateY(30px);
     }
 
     to {
         opacity: 1;
-        transform: translate(-50%, -50%);
+        transform: translateY(0);
     }
 }
+
+
+/* ==========================
+   REDUCE ANIMATION FOR USERS
+   WHO PREFER LESS MOTION
+========================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .hero picture img,
+    .hero-content {
+        animation: none;
+    }
+}
+
 
 /* ==========================
    PRODUCTS
@@ -178,7 +204,7 @@
 .section-title h2 {
     color: var(--secondary-color);
     font-size: 2rem;
-    margin-top: .5rem;
+    margin-top: 0.5rem;
 }
 
 .product-container {
@@ -191,7 +217,8 @@
     border-radius: var(--border-radius);
     overflow: hidden;
     box-shadow: var(--box-shadow);
-    transition: .3s ease;
+
+    transition: transform 0.3s ease;
 }
 
 .product-card img {
@@ -202,13 +229,14 @@
 }
 
 .product-card h3 {
-    padding: 1rem 1rem .5rem;
+    padding: 1rem 1rem 0.5rem;
     color: var(--secondary-color);
 }
 
 .product-card p {
     padding: 0 1rem 1.5rem;
 }
+
 
 /* ==========================
    ABOUT US - MOBILE
@@ -267,7 +295,11 @@
     text-decoration: none;
     border-radius: 6px;
     font-weight: 600;
-    transition: all 0.3s ease;
+
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease,
+        color 0.3s ease;
 }
 
 .about-button:hover {
@@ -276,7 +308,11 @@
     transform: translateY(-3px);
 }
 
-/* Why Choose Us Section */
+
+/* ==========================
+   WHY CHOOSE US
+========================== */
+
 .why-choose-us {
     background-color: var(--background-color);
     padding: 3rem 1rem;
@@ -329,7 +365,11 @@
     line-height: 1.6;
 }
 
-/* Call to Action Section */
+
+/* ==========================
+   CALL TO ACTION
+========================== */
+
 .cta {
     background-color: var(--secondary-color);
     padding: 3.5rem 1rem;
@@ -378,7 +418,11 @@
     padding: 0.8rem 1.4rem;
     border-radius: 6px;
     font-weight: 600;
-    transition: all 0.3s ease;
+
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease,
+        color 0.3s ease;
 }
 
 .cta-primary {
