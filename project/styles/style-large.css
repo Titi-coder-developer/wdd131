@@ -9,7 +9,7 @@
     }
 
     .hero-content {
-        width: 80%;
+        min-height: 100vh;
         max-width: 850px;
     }
 
